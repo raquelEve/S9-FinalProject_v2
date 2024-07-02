@@ -1,7 +1,13 @@
 import React from 'react'
+import HeaderComp from '../common/headerComponent/HeaderComp'
+import Parallax from '../components/parallaxComp/Parallax'
 
 export default function Home() {
     return (
-        <h1>Home</h1>
+        <>
+            <HeaderComp></HeaderComp>
+            <Parallax></Parallax>
+
+        </>
     )
 }

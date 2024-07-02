@@ -9,7 +9,16 @@ export default {
     "./node_modules/flowbite/**/*.js"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        pacificoReg: ["Pacifico", "cursive"],
+        playwriteBold: ["Playwrite NZ", "cursive"],
+        dancing: ["Dancing Script", "cursive"]
+      },
+      color: {
+        myblack: ['#374151']
+      }
+    },
   },
   plugins: [
     daisyui,

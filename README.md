@@ -46,5 +46,6 @@ src/ index.css
 
 ```
 npm install autoprefixer
+npm install autoprefixer postcss tailwindcss
 
 ```
