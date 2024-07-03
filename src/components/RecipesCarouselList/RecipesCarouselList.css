@@ -1,0 +1,38 @@
+#recipes-carousel-list .carousel{
+    padding-bottom: 20px;
+}
+
+#recipes-carousel-list .card-title{
+  justify-content: center !important;
+}
+.btn-mygreen{
+  background-color: #b3db61;
+  border: #b3db61;
+  transition: all 1.2s;
+}
+.btn-mygreen:hover{
+  background-color: #f59d49;
+  border:#f59d49
+}
+
+/* width */
+#recipes-carousel-list::-webkit-scrollbar {
+  width: 10px !important;
+}
+
+/* Track */
+#recipes-carousel-list::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(239, 239, 239) !important;
+  border-radius: 10px !important;
+}
+
+/* Handle */
+#recipes-carousel-list::-webkit-scrollbar-thumb {
+  background: rgb(218, 247, 175) !important;
+  border-radius: 10px !important;
+}
+
+/* Handle on hover */
+#recipes-carousel-list::-webkit-scrollbar-thumb:hover {
+  background: #caffc0 !important;
+}

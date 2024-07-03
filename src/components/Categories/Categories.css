@@ -1,0 +1,25 @@
+
+#categories1 .category-box{
+    overflow: hidden;
+}
+
+#categories1 .categ-content-list .category-box:nth-child(odd) .bg-img {
+    background-image: url('../../assets/cat_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: all 1.2s;
+}
+#categories1 .categ-content-list .category-box:nth-child(even) .bg-img {
+    background-image: url('../../assets/cat_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: all 1.2s;
+}
+#categories1 .category-box:hover .bg-img {
+    transition: all 1.8s;
+    transform: scale(1.2);
+}
+
+#categories2{}

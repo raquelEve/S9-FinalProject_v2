@@ -20,8 +20,8 @@ const Parallax = () => {
     return (
         <div id="parallax">
             <div>
-                <p id="parallax-text1" className="parallax-text  text-[32px] capitalice text-white font-bold font-pacificoReg">Encuentra</p>
-                <p id="parallax-text2" className="parallax-text delayed capitalize text-[32px] text-white font-bold font-pacificoReg">Deliciosas Recetas</p>
+                <p id="parallax-text1" className="parallax-text  text-[32px] capitalice text-white font-bold font-pacificoReg">Find</p>
+                <p id="parallax-text2" className="parallax-text delayed capitalize text-[32px] text-white font-bold font-pacificoReg">delicious recipes</p>
             </div>
         </div>
     );

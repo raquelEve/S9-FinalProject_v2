@@ -15,8 +15,9 @@ export default {
         playwriteBold: ["Playwrite NZ", "cursive"],
         dancing: ["Dancing Script", "cursive"]
       },
-      color: {
-        myblack: ['#374151']
+      colors: {
+        myblack: ['#374151'],
+        mygreen: ['#b3db61']
       }
     },
   },

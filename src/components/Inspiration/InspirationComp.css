@@ -1,0 +1,29 @@
+#inspiration a{
+  transition: all 1.2s;
+  background-color: #f59d49 ;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+#inspiration a h3{
+  transition: all 0.5s;
+}
+#inspiration a:hover {
+    opacity: 0.6;
+}
+#inspiration a:hover h3,
+#inspiration a:focus h3{
+ position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  transition: background-color 0.3s ease;
+  color: #b3db61;
+}
+
+
