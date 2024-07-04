@@ -10,5 +10,11 @@ body{
     /* background-color: #b9f54e; */
 }
 
-
+.landingText{
+    background-color: rgb(238, 238, 238);
+}
+.landingText p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+}
 

@@ -1,0 +1,26 @@
+#subscribe{
+    padding: 80px 0px;
+    background-color: rgba(179, 219, 97, 0.3);
+    background-color: rgba(245, 157, 73,0.5) ;
+}
+
+#subscribe button{
+    background-color:#b3db61;
+    border:#b3db61;
+    transition: all 1.2s;
+}
+#subscribe input{
+    background-color:#b3db61;
+    border:#b3db61;
+    transition: all 1.2s;
+}
+#subscribe input:focus + button{
+    background-color: #f59d49 ;
+}
+#subscribe input:focus + button:hover{
+    background-color: #fd8312 ;
+    color:#fff;
+}
+#subscribe button:hover{
+  background-color: #f59d49 ;
+}
