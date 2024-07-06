@@ -7,6 +7,7 @@ function AppRouting() {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/recipe" element={<About />} />
+            <Route path="/category" element={<category />} />
             <Route path='*' element={<Home />} />
         </Routes>
     );

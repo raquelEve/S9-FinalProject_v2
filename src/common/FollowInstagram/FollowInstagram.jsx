@@ -20,7 +20,7 @@ export default function FollowInstagram() {
 
     return (
         <>
-            <div className='flex relative bg-slate-700 mt-20' id="FollowInsta">
+            <div className='flex relative bg-slate-700 mt-20 FollowInsta'>
                 {repeatedImageUrls.map((url, index) => (
                     <div
                         key={index}

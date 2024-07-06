@@ -6,8 +6,10 @@ export default function RecipesCarouselList() {
     return (
         <>
             <h2 className="text-center text-2xl font-bold my-10">New Recipes</h2>
-            <div id="recipes-carousel-list" className='my-6 overflow-x-auto container mx-auto py-4'>
+            <div className='recipes-carousel-list my-6 overflow-x-auto container mx-auto py-4 relative'>
                 {/* ----- */}
+                <button className='absolute btn-back'>A</button>
+                <button className='absolute btn-next'>H</button>
 
                 <div className="carousel rounded-box">
                     {/* carousel item */}
