@@ -1,5 +1,4 @@
 import React from 'react'
-import SocialNavbarComp from '../socialNavbar/SocialNavbarComp'
 
 export default function FooterComp() {
     const currentYear = new Date().getFullYear();

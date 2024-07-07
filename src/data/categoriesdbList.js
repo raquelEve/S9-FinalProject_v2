@@ -1,5 +1,4 @@
-
-const categoriesList = {
+const categoriesNameList = {
     "categories": [
         {
             "idCategory": "1",
@@ -87,5 +86,4 @@ const categoriesList = {
         }
     ]
 }
-
-}
+export default categoriesNameList;
