@@ -1,7 +1,11 @@
+
+.recipes-carousel-list{
+  overflow-x: hidden;
+}
+
 .recipes-carousel-list .carousel{
     padding-bottom: 20px;
 }
-
 .recipes-carousel-list .card-title{
   justify-content: center !important;
 }
@@ -13,5 +17,41 @@
 .btn-mygreen:hover{
   background-color: #f59d49;
   border:#f59d49
+}
+.btn-back, 
+.btn-front{
+  z-index: 100;
+  color: #b3db61;
+  top: calc( 256px / 2);
+  transform: translateY(0px);
+  font-size: 45px;
+  opacity: 0.8;
+  transition: all .5s;
+  text-shadow: 1px 1px 2px rgb(103, 103, 103), 0 0 0.2em #a49500, 0 0 0.2em #cbbc12;
+}
+.btn-back{
+  left: 100px;
+}
+.btn-front{
+  right: 100px;
+}
+.btn-back:hover{
+  opacity: 1;
+  left: 85px;
+} 
+.btn-front:hover{
+  opacity: 1;
+  right: 85px;
+}
+.btn-back:disabled, 
+.btn-front:disabled{
+  opacity: 0.3;
+}
+
+.btn-back:disabled:hover{
+  left: 100px;
+} 
+.btn-front:disabled{
+  right: 100px;
 }
 

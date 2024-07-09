@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 300px;
+    /* height: 300px; */
     margin-top: 60px;
     margin-bottom: 60px;
     position: relative;
@@ -36,17 +36,17 @@
 }
 
 #parallax #parallax-text1 {
-    position: absolute;
+    /* position: absolute; */
     /* top: 84px; */
     /* left: 160px; */
-    margin-top: -30px;
-    transform: translateX(-50%)!important;
+    /* margin-top: -30px; */
+    /* transform: translateX(-50%)!important; */
 }
 
 #parallax #parallax-text2 {
-    position: absolute;
+    /* position: absolute; */
     /* top: 130px; */
     /* left: 189px; */
-    margin-top: 20px;
-    transform: translateX(-50%)!important;
+    /* margin-top: 20px; */
+    /* transform: translateX(-50%)!important; */
 }

@@ -3,7 +3,7 @@
 }
 
 .social-nav svg {
-    fill: white;
+    fill: #334155;
     transition: fill 0.3s ease, transform 0.3s ease; /* Agrega transición para fill y transform */
 }
 

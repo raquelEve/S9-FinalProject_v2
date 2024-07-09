@@ -47,5 +47,6 @@ src/ index.css
 ```
 npm install autoprefixer
 npm install autoprefixer postcss tailwindcss
+npm install react-icons --save
 
 ```

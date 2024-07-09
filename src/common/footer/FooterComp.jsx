@@ -5,7 +5,7 @@ export default function FooterComp() {
     return (
         <>
             <footer>
-                <div className='bg-neutral-500 text-white text-center'>
+                <div className='bg-neutral-500 text-white text-center p-2'>
                     <p>© {currentYear} ñammmy - All rights reserved</p>
                 </div>
             </footer>

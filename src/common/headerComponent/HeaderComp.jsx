@@ -15,7 +15,7 @@ export default function HeaderComp() {
             <SocialNavbarComp></SocialNavbarComp>
 
             <div className='flex justify-center font-playwriteBold text-5xl mt-4 mb-[48px] ' id='logo'>
-                ñammmy
+                nyammmy
             </div>
             <div className="border border-x-0  border-slate-700 border-solid by-1 py-3 ">
                 <nav className="flex justify-center w-[300px]mx-auto text-slate-700">
