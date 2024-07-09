@@ -3,15 +3,17 @@ import React, { createContext, useState } from 'react';
 export const RecipeContext = createContext();
 
 const RecipeProvider = ({ children }) => {
-    const [recipesList, setRecipesList] = useState([]);
+    const [recipeList, setRecipeList] = useState([]);
     const [recipe, setRecipe] = useState(null);
 
     const getRecipeListByCategory = (category) => {
-        fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`)
+        return fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`)
             .then(response => response.json())
             .then(data => {
                 if (data.meals) {
-                    setRecipesList(data.meals);
+                    setRecipeList(data.meals);
+                } else {
+                    setRecipeList([]);
                 }
             })
             .catch(error => console.error('Error fetching recipe list:', error));
@@ -33,7 +35,7 @@ const RecipeProvider = ({ children }) => {
     };
 
     const value = {
-        recipesList,
+        recipeList,
         recipe,
         getRecipeById,
         getRecipeListByCategory

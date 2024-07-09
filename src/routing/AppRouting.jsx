@@ -11,7 +11,7 @@ function AppRouting() {
         <Routes>
             <Route path="/" element={<Home />} />
             {/* <Route path="/recipe" element={<About />} /> */}
-            <Route path="/recipes/:name" element={<RecipesListPage />} />
+            <Route path="/recipes/:name/:id" element={<RecipesListPage />} />
             <Route path="/recipe/:id" element={<RecipePage />} />
             <Route path='*' element={<Home />} />
         </Routes>

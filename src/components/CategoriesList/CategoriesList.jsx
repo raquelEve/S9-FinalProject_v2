@@ -1,6 +1,7 @@
 import React from 'react';
 import './Categories.css';
 import categoriesNameList from '../../data/categoriesdbList';
+import { Link } from 'react-router-dom';
 
 export default function Categories() {
     return (
@@ -12,7 +13,7 @@ export default function Categories() {
                     {categoriesNameList.categories.map(category => (
                         <div key={category.idCategory} className='category-box flex flex-col my-4'>
                             <p>{category.strCategoryThum}</p>
-                            <a href='#' className='categ-link'>
+                            <Link to={`/recipes/category/${category.strCategory}`} className='categ-link'>
                                 <div className='overflow-hidden border rounded-full'>
                                     {/* Background image */}
                                     <div
@@ -28,7 +29,7 @@ export default function Categories() {
                                 </div>
                                 {/* Category name */}
                                 <h2 className='text-center mt-4'>{category.strCategory}</h2>
-                            </a>
+                            </Link>
                         </div>
                     ))}
                 </div>

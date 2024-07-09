@@ -7,7 +7,7 @@ import { GiForkKnifeSpoon } from "react-icons/gi";
 import { GiKnifeFork } from "react-icons/gi";
 
 export default function RecipeDetail({ recipe }) {
-    console.log("recipeqqqq", recipe);
+
     const [loading, setLoading] = useState(true);
 
     console.log("recipe in detail", recipe);
@@ -18,7 +18,10 @@ export default function RecipeDetail({ recipe }) {
         }
     }, [recipe]);
 
-    if (loading) return <div>Loading...</div>;  // Mostrar el componente de carga mientras se carga la receta
+    if (loading) return
+    <div className='h-[100%] w-full flex justify-center items-center'>
+        <span className="loading loading-ball loading-xs"></span>
+    </div>;
 
     if (!recipe) return <div>No recipe found.</div>; // Manejar el caso donde no hay receta
 

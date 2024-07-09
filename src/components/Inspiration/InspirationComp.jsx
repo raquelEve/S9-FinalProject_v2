@@ -1,6 +1,7 @@
 import React from 'react'
 import './InspirationComp.css'
 import inspirationList from '../../data/inspirationList'
+import { Link } from 'react-router-dom';
 
 export default function InspirationComp() {
     const imageUrls = [
@@ -12,13 +13,13 @@ export default function InspirationComp() {
 
             <div className='grid md:grid-cols-2 gap-4 xl:grid-cols-3' id="inspiration">
                 {inspirationList.meals.map((recipe) => (
-                    <a href="#"
+                    <Link to={`/recipe/${recipe.idMeal}`}
                         key={recipe.idMeal}
                         className="h-64 bg-cover bg-center rounded-box relative "
                         style={{ backgroundImage: `url(${recipe.strMealThumb})` }}
                     >
                         <h3 className='absolute bottom-0 left-0 w-full text-white text-center bg-black bg-opacity-50 py-2'>{recipe.strMeal}</h3>
-                    </a>
+                    </Link>
                 ))}
             </div>
         </>
