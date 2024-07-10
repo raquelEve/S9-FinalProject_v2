@@ -18,6 +18,18 @@ const RecipeProvider = ({ children }) => {
             })
             .catch(error => console.error('Error fetching recipe list:', error));
     };
+    const getRecipeListByArea = (area) => {
+        return fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${area}`)
+            .then(response => response.json())
+            .then(data => {
+                if (data.meals) {
+                    setRecipeList(data.meals);
+                } else {
+                    setRecipeList([]);
+                }
+            })
+            .catch(error => console.error('Error fetching recipe list:', error));
+    };
 
     const getRecipeById = (id) => {
         console.log("id en llamada");
@@ -38,7 +50,8 @@ const RecipeProvider = ({ children }) => {
         recipeList,
         recipe,
         getRecipeById,
-        getRecipeListByCategory
+        getRecipeListByCategory,
+        getRecipeListByArea
     };
 
     return (

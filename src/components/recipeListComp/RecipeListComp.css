@@ -1,0 +1,9 @@
+.btn-mygreen{
+  background-color: #b3db61;
+  border: #b3db61;
+  transition: all 1.2s;
+}
+.btn-mygreen:hover{
+  background-color: #f59d49;
+  border:#f59d49
+}

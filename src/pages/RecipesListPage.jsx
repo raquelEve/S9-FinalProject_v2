@@ -1,13 +1,15 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import HeaderComp from '../common/headerComponent/HeaderComp';
-import FooterComp from '../common/footer/FooterComp';
+import HeaderComp from '../common/HeaderComponent/HeaderComp';
+import FooterComp from '../common/FooterComponent/FooterComp';
 import { RecipeContext } from '../context/RecipesContext';
 import RecipeListComp from '../components/recipeListComp/RecipeListComp';
 
 export default function RecipesListPage() {
     const { name, id } = useParams();
-    const { recipeList, getRecipeListByCategory } = useContext(RecipeContext);
+    console.log("name", name);
+    console.log("id", id);
+    const { recipeList, getRecipeListByCategory, getRecipeListByArea } = useContext(RecipeContext);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -15,6 +17,11 @@ export default function RecipesListPage() {
             setLoading(true);
             console.log(`Fetching recipe with category: ${id}`);
             getRecipeListByCategory(id).then(() => setLoading(false));
+        }
+        if (name == 'area') {
+            setLoading(true);
+            console.log(`Fetching recipe with category: ${id}`);
+            getRecipeListByArea(id).then(() => setLoading(false));
         }
     }, [name, id,]);
 
@@ -33,16 +40,15 @@ export default function RecipesListPage() {
     return (
         <>
             <HeaderComp />
-            <main className='container mx-auto'>
+            <main className='container mx-auto mb-16'>
                 <h1 className='text-2xl mt-14 mb-12'>
                     <span className='font-bold'>{name}</span>:
                     <spann className="font-playwriteBold ml-4">{id}</spann>
                 </h1>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
                     {recipeList.map((recipe) => (
-                        <>
-                            <RecipeListComp recipe={recipe} key={recipe.idMeal}></RecipeListComp>
-                        </>
+
+                        <RecipeListComp recipe={recipe} key={recipe.idMeal}></RecipeListComp>
                     ))}
                 </div>
 

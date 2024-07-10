@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react'
-import HeaderComp from '../common/headerComponent/HeaderComp'
-import FooterComp from '../common/footer/FooterComp'
+import HeaderComp from '../common/HeaderComponent/HeaderComp'
+import FooterComp from '../common/FooterComponent/FooterComp'
 import RecipeDetail from '../components/recipeDetail/RecipeDetail'
 import { useParams } from 'react-router-dom';
 import { RecipeContext } from '../context/RecipesContext';

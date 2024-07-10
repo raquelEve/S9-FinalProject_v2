@@ -17,7 +17,7 @@ export default function RecipeListComp({ recipe }) {
                     <h2 className="card-title text-center h-[60px] table-cell align-top mb-[-5px]">{recipe.strMeal}</h2>
 
                     <div className="card-actions justify-center">
-                        <Link className="btn btn-primary" to={`/recipe/${recipe.idMeal}`}>See More +</Link>
+                        <Link className="btn btn-mygreen" to={`/recipe/${recipe.idMeal}`}>See More +</Link>
                     </div>
                 </div>
             </div>
