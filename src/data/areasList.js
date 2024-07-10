@@ -18,7 +18,7 @@ const areasList = [
         flat: 'https://www.themealdb.com/images/icons/flags/big/32/fr.png',
         countryName: 'France',
         id: 'fr',
-        src: 'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        src: 'https://images.unsplash.com/photo-1500039436846-25ae2f11882e?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
         area: 'Canadian',
@@ -39,14 +39,14 @@ const areasList = [
         flat: 'https://www.themealdb.com/images/icons/flags/big/32/cn.png',
         countryName: 'China',
         id: 'cn',
-        src: 'https://images.unsplash.com/photo-1510332981392-36692ea3a195?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        src: 'https://images.unsplash.com/photo-1547150492-da7ff1742941?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
         area: 'Egyptian',
         flat: 'https://www.themealdb.com/images/icons/flags/big/32/eg.png',
         countryName: 'Egypt',
         id: 'eg',
-        src: 'https://images.unsplash.com/photo-1562679299-266edbefd6d7?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        src: 'https://images.unsplash.com/photo-1608546043931-6c9678ea9feb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
         area: 'Greek',
@@ -74,7 +74,7 @@ const areasList = [
         flat: 'https://www.themealdb.com/images/icons/flags/big/32/jp.png',
         countryName: 'Japan',
         id: 'jp',
-        src: 'https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        src: 'https://images.unsplash.com/photo-1528164344705-47542687000d?q=80&w=1792&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
         area: 'Mexican',

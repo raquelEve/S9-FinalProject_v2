@@ -4,6 +4,7 @@ import HeaderComp from '../common/HeaderComponent/HeaderComp';
 import FooterComp from '../common/FooterComponent/FooterComp';
 import { RecipeContext } from '../context/RecipesContext';
 import RecipeListComp from '../components/recipeListComp/RecipeListComp';
+import SocialNavbarComp from '../common/socialNavbar/SocialNavbarComp';
 
 export default function RecipesListPage() {
     const { name, id } = useParams();
@@ -53,6 +54,7 @@ export default function RecipesListPage() {
                 </div>
 
             </main>
+            <SocialNavbarComp></SocialNavbarComp>
             <FooterComp />
         </>
     );

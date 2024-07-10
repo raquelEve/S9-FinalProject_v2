@@ -8,3 +8,14 @@
 .area-card:hover h2{
     color: #a7f012;
 }
+.area-card:hover:before {
+    content: ''; 
+    position: absolute; 
+    top: 5px; 
+    left: 5px; 
+    width: calc(100% - 10px); 
+    height: calc(100% - 10px); 
+    border: 2px solid #a7f012; 
+    border-radius: 15px;
+    z-index: -1; 
+}

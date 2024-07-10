@@ -22,7 +22,7 @@ export default function HeaderComp() {
                 <nav className="flex justify-center w-[300px]mx-auto text-slate-700">
                     <NavLink to='/home' className='mx-3'>Home</NavLink>
                     <NavLink to='/global' className='mx-3'>World Recipes</NavLink>
-                    <NavLink to='/about' className='mx-3'>Link</NavLink>
+                    <NavLink to='/about' className='mx-3'>About</NavLink>
                 </nav>
             </div >
         </header >
