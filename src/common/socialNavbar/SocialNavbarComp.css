@@ -1,6 +1,12 @@
 .social-nav{
     background: #b3db61;
 }
+.social-nav .icon{
+   font-size: 26px;
+}
+.social-nav .icon.insta{
+   font-size: 28px;
+}
 
 .social-nav svg {
     fill: #334155;

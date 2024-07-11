@@ -50,3 +50,15 @@ npm install autoprefixer postcss tailwindcss
 npm install react-icons --save
 
 ```
+
+## Firebase
+
+```
+$ npm install firebase
+```
+
+## EmailJs
+
+```
+$ npm install --save @emailjs/browser
+```
