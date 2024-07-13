@@ -1,50 +1,72 @@
-#logo{
+#logo {
     margin-top: 40px;
 }
-.active{
+
+.active {
     font-weight: 600;
     position: relative;
     transition: all 0.7s;
     color: #f59d49;
 }
-.header-nav-link{
+
+.header-nav-link {
     position: relative;
     transition: all 0.7s;
-    /* margin-left: 2px; */
-    /* margin-right: 2px; */
+    border-top: 1px solid transparent; 
+    border: none;
 }
+
 .active:before,
-.header-nav-link:hover:before{
-    content:' ';
+.header-nav-link:hover:before {
+    content: ' ';
     display: block;
     position: absolute;
     bottom: -2px;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
-    width: calc( 100% + 8px );
-    border-bottom: 4px solid #a9df3c;
+    width: calc(100% + 8px);
+    border-bottom: 4px solid #a9df3c; /* Borde inferior verde */
     transition: all 0.7s;
     z-index: 10;
 }
 
-.header-nav-link:hover{
-    /* color: #a9df3c; */
+.header-nav-link:hover {
     color: #f59d49;
 }
 
-.headernav-link:hover:before{
+.header-nav-link:hover:before {
     bottom: -2px;
     transform: translateX(-50%);
-    width: calc( 100% + 8px );
+    width: calc(100% + 8px);
+    border-bottom: 4px solid #a9df3c; /* Borde inferior verde */
 }
 
-.header-nav-link:hover:after{
-    top:0px;
-    bottom: auto;
-    transform: translateX(-50%);
-    width: calc( 100% + 8px );
-    border-bottom: 4px solid #a9df3c;
+@media (max-width: 768px) {
+    .header-nav-link {
+        border-bottom: 1px solid rgb(156, 156, 156);
+    }
+    .header-nav-link:last-child {
+        border-bottom: none;
+    }
+    .header-nav-link.active {
+        border-bottom: none;
+    }
+
+    .menu-open .header-nav-link {
+        transform: translateY(0);
+        opacity: 1;
+        max-height: 1000px; /* Ajusta este valor según sea necesario */
+        transition: transform 0.5s ease, opacity 0.5s ease, max-height 0.7s ease; /* Añade la transición a max-height */
+    }
+
+    .menu-closed .header-nav-link {
+        transform: translateY(-100%);
+        opacity: 0;
+        max-height: 0;
+        transition: transform 0.5s ease, opacity 0.5s ease, max-height 0.7s ease; /* Añade la transición a max-height */
+    }
+
+    .menu-closed {
+        height: 0;
+    }
 }
-.xs-header-nav{}
-.xs-active {}

@@ -8,6 +8,7 @@ import SocialNavbarComp from '../common/socialNavbar/SocialNavbarComp';
 export default function WorldRecipesPage() {
     return (
         <>
+            <SocialNavbarComp></SocialNavbarComp>
             <HeaderComp />
             <main className='container mx-auto mb-16'>
                 <h1 className='font-playwriteBold text-2xl mt-14 ml-2 mb-12'>
