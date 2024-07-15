@@ -1,9 +1,16 @@
 .btn-mygreen{
   background-color: #b3db61;
   border: #b3db61;
-  transition: all 1.2s;
+  transition: all 0.7s;
 }
 .btn-mygreen:hover{
-  background-color: #f59d49;
+  background-color: hsl(29, 90%, 62%);
   border:#f59d49
+}
+
+.single-recipes-list:hover{
+ box-shadow: inset 0px 0px 18px 2px rgb(179, 219, 97,0.7);
+}
+.single-recipes-list:hover img{
+  opacity:0.7
 }

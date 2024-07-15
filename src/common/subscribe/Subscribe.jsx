@@ -1,12 +1,25 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import './Subscribe.css';
 import emailjs from '@emailjs/browser';
 
 export default function Subscribe() {
     const form = useRef();
 
+    const [errorMessage, setErrorMessage] = useState('');
+
+    const validateEmail = (email) => {
+        const re = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,3}$/;
+        return re.test(String(email).toLowerCase());
+    };
+
     const sendEmail = (e) => {
         e.preventDefault();
+        const userEmail = form.current.user_email.value;
+
+        if (!validateEmail(userEmail)) {
+            setErrorMessage('Please write a correct email address');
+            return;
+        }
 
         emailjs.sendForm(
             import.meta.env.VITE_EMAIL_SERVICE_ID,
@@ -17,9 +30,11 @@ export default function Subscribe() {
             .then((response) => {
                 console.log('email correctamente!', response.status, response.text);
                 form.current.reset();
+                setErrorMessage('');
             })
             .catch((error) => {
                 console.error('Error al enviar email:', error.text);
+                setErrorMessage('There was an error sending your email. Please try again.');
             });
     };
 
@@ -41,6 +56,9 @@ export default function Subscribe() {
                     <button type="submit" className="btn join-item rounded-r-full">Subscribe</button>
                 </div>
             </form>
+            <p className='error.email-text text-red-500 text-center text-sm mt-4'>
+                {errorMessage}
+            </p>
         </div>
     );
 }

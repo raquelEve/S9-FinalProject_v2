@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './HeaderComp.css';
 import { NavLink, useLocation } from 'react-router-dom';
+import logo from '../../assets/logo.jpg';
 import logo2 from '../../assets/logo2.jpg';
+import logoDef from '../../assets/logoDefcortado.png';
 
 export default function HeaderComp() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -17,7 +19,7 @@ export default function HeaderComp() {
     return (
         <header>
             <div className='flex justify-center text-5xl mt-4 mb-[48px] relative' id='logo'>
-                <img src={logo2} alt="logo" className='h-[100px] md:h-[180px]' />
+                <img src={logo} alt="logo" className='h-[100px] md:h-[200px] w-auto' />
                 <button className='absolute top-[-22px] right-[20px] md:hidden text-3xl' onClick={toggleMenu}>
                     {menuOpen ? 'X' : '☰'}
                 </button>

@@ -47,9 +47,6 @@ export default function AboutPage() {
                     <div className='border-info-extra text-center w-2/3 rounded-box mx-auto my-8 p-10'>
                         <h2 className="text-xl font-bold text-center my-8">Where to Find Me:</h2>
                         <GithubLink></GithubLink>
-                        <a href="https://github.com/raquelEve" target="_blank" rel="noopener noreferrer" className='text-blue-500 underline'>
-                            Visit my GitHub
-                        </a>
                         <p>Join me on this exciting journey where we will explore together the art of cooking and technology!</p>
                     </div>
                     <div className='detail-finish flex justify-center items-center mb-[120px] text-[#f59d49] text-4xl'>

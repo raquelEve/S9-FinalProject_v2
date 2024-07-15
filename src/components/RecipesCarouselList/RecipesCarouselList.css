@@ -1,6 +1,7 @@
 
 .recipes-carousel-list{
   overflow-x: hidden;
+    white-space: nowrap;
 }
 
 .recipes-carousel-list .carousel{
@@ -21,27 +22,34 @@
 .btn-back, 
 .btn-front{
   z-index: 100;
-  color: #b3db61;
-  top: calc( 256px / 2);
+  color: white;
+  border: 1px solif #b3db61;
+  top: calc( 436px / 2);
   transform: translateY(0px);
   font-size: 45px;
   opacity: 0.8;
-  transition: all .5s;
-  text-shadow: 1px 1px 2px rgb(103, 103, 103), 0 0 0.2em #a49500, 0 0 0.2em #cbbc12;
+  transition: all .3s;
+ text-shadow: 0px 0px 11px 5px rgb(103, 103, 103);
 }
 .btn-back{
-  left: 100px;
+  left: 50px;
 }
 .btn-front{
-  right: 100px;
+  right: 50px;
 }
 .btn-back:hover{
   opacity: 1;
-  left: 85px;
+  left: 45px;
+  color: #b3db61;
 } 
 .btn-front:hover{
   opacity: 1;
-  right: 85px;
+  right: 45px;
+  color: #b3db61;
+}
+.btn-back:active,
+.btn-front:active {
+    color: #e0824c; 
 }
 .btn-back:disabled, 
 .btn-front:disabled{
@@ -49,9 +57,17 @@
 }
 
 .btn-back:disabled:hover{
-  left: 100px;
+   left: 50px;
+   color:white;
 } 
-.btn-front:disabled{
-  right: 100px;
+.btn-front:disabled:hover{
+  right: 50px;
+  color:white;
 }
 
+.carousel-item .card:hover{
+ box-shadow: inset 0px 0px 18px 2px rgb(179, 219, 97,0.7);
+}
+.carousel-item .card:hover img{
+  opacity:0.7
+}

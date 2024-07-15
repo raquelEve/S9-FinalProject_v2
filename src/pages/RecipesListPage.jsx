@@ -41,7 +41,7 @@ export default function RecipesListPage() {
     return (
         <>
             <HeaderComp />
-            <main className='container mx-auto mb-16'>
+            <main className='container p-4 md:p-0 mx-auto mb-16'>
                 <h1 className='text-2xl mt-14 mb-12'>
                     <span className='font-bold'>{name}</span>:
                     <spann className="font-playwriteBold ml-4">{id}</spann>

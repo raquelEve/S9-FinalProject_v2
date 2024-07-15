@@ -1,5 +1,5 @@
 import React from 'react';
-import './Categories.css';
+import './CategoriesList.css';
 import categoriesNameList from '../../data/categoriesdbList';
 import { Link } from 'react-router-dom';
 

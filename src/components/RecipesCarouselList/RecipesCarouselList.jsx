@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import './RecipesCarouselList.css';
 import latestList from '../../data/latestsList';
 import { Link, NavLink } from 'react-router-dom';
+import { FaArrowAltCircleLeft } from "react-icons/fa";
+import { FaArrowAltCircleRight } from "react-icons/fa";
+import { FaRegArrowAltCircleLeft } from "react-icons/fa";
 
 export default function RecipesCarouselList() {
 
@@ -45,15 +48,19 @@ export default function RecipesCarouselList() {
     return (
         <>
             <h2 className="text-center text-2xl font-bold my-10">New Recipes</h2>
-            <div className='relative'>
+            <div className='relative border container mx-auto'>
+
                 <button className='absolute btn-back hidden lg:block'
                     onClick={moveBack}
-                    disabled={isAtStart}>&#129092;</button>
+                    disabled={isAtStart}>
+                    <FaArrowAltCircleLeft />
+                </button>
                 <button
                     className='absolute btn-front hidden lg:block'
                     onClick={moveFront}
-                    disabled={isAtEnd}>&#129094;</button>
-
+                    disabled={isAtEnd}>
+                    <FaArrowAltCircleRight />
+                </button>
                 <div ref={scrollContainer} className='recipes-carousel-list my-6 overflow-x-auto container mx-auto py-4 relative'>
                     {/* ----- */}
 

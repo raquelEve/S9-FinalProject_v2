@@ -14,9 +14,10 @@ export default function Home() {
 
     return (
         <>
+            <SocialNavbarComp></SocialNavbarComp>
             <HeaderComp></HeaderComp>
             <Parallax></Parallax>
-            <main className='container mx-auto'>
+            <main className='container mx-auto px-4 md:px-0'>
                 <InspirationComp></InspirationComp>
                 <CategoriesList></CategoriesList>
             </main>

@@ -21,4 +21,7 @@
     transition: all 1.8s;
     transform: scale(1.2);
 }
+#categories1 .category-box:hover h2 {
+   color: #f59d49;
+}
 

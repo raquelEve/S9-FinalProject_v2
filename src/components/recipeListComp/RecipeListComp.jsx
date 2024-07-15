@@ -8,7 +8,7 @@ export default function RecipeListComp({ recipe }) {
 
     return (
         <>
-            <div className="card bg-base-100 shadow-xl mb-4" key={recipe.idMeal}>
+            <div className="card bg-base-100 shadow-xl mb-4 single-recipes-list" key={recipe.idMeal}>
                 <figure>
                     <img
                         src={recipe.strMealThumb} alt={recipe.strMeal} />

@@ -39,14 +39,15 @@ export default function RecipeDetail({ recipe }) {
                     </div>
 
                 </div>
-                <div className='flex justify-between container mx-auto rounded-box bg-white px-8 p-6 shadow-lg'>
+                <div className='flex flex-col md:flex-row md:md:justify-between container mx-auto rounded-box bg-white px-8 p-6 shadow-lg'>
 
                     <img
                         src={recipe.strMealThumb}
                         alt={recipe.strMeal}
+                        className="mb-4 w-full md:w-1/2 h-auto"
                         style={{ objectFit: 'cover' }}
-                        className="mb-4 w-1/2 h-auto" />
-                    <div className='w-1/3'>
+                    />
+                    <div className='w-full md:w-1/3'>
                         <h2 className="text-xl font-bold mt-4">Ingredients</h2>
                         <ul className='mb-6'>
                             {Array.from({ length: 20 }, (_, i) => i + 1).map(i => (
@@ -87,7 +88,6 @@ export default function RecipeDetail({ recipe }) {
                         <p>{recipe.strInstructions}</p>
                         <div className='detail-finish flex justify-center items-center mt-[120px] text-[#f59d49] text-4xl'>
                             <span><GiKnifeFork /></span>
-                            {/* <span><GiForkKnifeSpoon /></span> */}
                         </div>
                     </div>
                 </div>
