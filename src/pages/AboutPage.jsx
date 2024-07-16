@@ -18,18 +18,18 @@ export default function AboutPage() {
                         </p>
                     </div>
                 </div>
-                <div className='flex justify-between container mx-auto rounded-box bg-white px-8 p-6 shadow-lg'>
+                <div className='flex justify-between container mx-auto rounded-box bg-white px-8 pb-6 shadow-lg'>
                     <div className='w-full p-12'>
-                        <h2 className="text-xl font-bold text-center my-8">About nyammmmy</h2>
+                        <h2 className="text-xl font-bold text-center mt-6 mb-8">About nyammmmy</h2>
                         <p className='mb-6 text-center'>
 
                             <strong>nyammmy</strong> is the final project of Raquel Martínez, student of IT Academy React Bootcamp. This website is currently in its initial Prototype version, offering a vision of what could evolve into a comprehensive recipe platform. In this version, users can search for recipes by main ingredient, countries and categories.
                         </p>
-                        <h2 className="text-xl font-bold text-center my-8">Our Mission:</h2>
+                        <h2 className="text-xl font-bold text-center my-8">Our Mission</h2>
                         <p className='mb-6 text-center'>
                             The purpose of this website is to provide a complete platform for exploring and discovering delicious recipes from around the world. Built with <strong>React</strong>, it offers functional, visually appealing design using tools like <strong>Vite, React-router-dom, and Tailwind CSS.</strong> The website aims to be a valuable resource, offering a wide variety of recipes.
                         </p>
-                        <h2 className="text-xl font-bold text-center my-8">Our Mission</h2>
+                        <h2 className="text-xl font-bold text-center my-8">Our Goal</h2>
                         <p className='mb-6 text-center'>
                             <strong>nyammmy</strong>  aims to be a comprehensive resource for food enthusiasts, offering detailed recipes along with ingredient lists, preparation instructions, and nutritional information. Whether you are a beginner cook or a seasoned chef, <strong>nyammmy</strong>  has something to offer you.</p>
                         <h2 className="text-xl font-bold text-center my-8">Meet the Creator</h2>
