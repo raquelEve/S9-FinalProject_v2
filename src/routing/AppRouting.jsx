@@ -7,8 +7,7 @@ import AboutPage from '../pages/AboutPage';
 import LoginPage from '../pages/LoginPage';
 import RegisterPage from '../pages/RegisterPage';
 import ProfilePage from '../pages/ProfilePage';
-
-// import About from '../pages/RecipePage';
+import PrivateRoute from './PrivateRoute';
 
 
 function AppRouting() {
@@ -19,9 +18,12 @@ function AppRouting() {
             <Route path="/global" element={<WorldRecipesPage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
-            <Route path="/profile" element={<ProfilePage />} />
             <Route path="/recipes/:name/:id" element={<RecipesListPage />} />
             <Route path="/recipe/:id" element={<RecipePage />} />
+            <Route path="/profile" element={<ProfilePage />} />
+            {/* <PrivateRoute path="/profile">
+                <ProfilePage />
+            </PrivateRoute> */}
             <Route path='*' element={<Home />} />
         </Routes>
     );

@@ -1,0 +1,11 @@
+.link-user-fav{
+    padding: 8px 50px;
+}
+.recipe-item{
+    border-bottom: 1px solid #5f5f5f !important;
+    cursor: pointer;
+    padding-bottom: 8px;
+}
+.link-user-fav:hover{
+    color: #f59d49;
+}

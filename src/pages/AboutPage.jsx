@@ -8,10 +8,11 @@ import GithubLink from '../common/githubLink/GithubLink';
 export default function AboutPage() {
     return (
         <>
+            <SocialNavbarComp></SocialNavbarComp>
             <HeaderComp></HeaderComp>
             <div className="about-detail">
                 <div className='container mx-auto flex justify-between items-end p-6 pb-0'>
-                    <div>
+                    <div className='mx-auto md:mx-0'>
                         <h1 className='font-playwriteBold text-2xl mt-14 ml-2 mb-2'>About nyammmmy</h1>
                         <p className='text-[rgb(245,157,73)] font-bold mb-8 ml-2'>
                             Final Project by: Raquel Martínez

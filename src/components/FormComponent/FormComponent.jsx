@@ -12,7 +12,7 @@ export default function FormComponent({ title, handleSubmit, error }) {
     };
 
     return (
-        <div className='card-form card card-compact bg-base-100 min-w-[300px] md:min-w-[400px] shadow-xl border p-8 mx-auto mt-[120px] mb-[200px]'>
+        <div className='card-form card card-compact bg-base-100 min-w-[300px] md:min-w-[400px] shadow-xl border p-8 mx-auto mt-[120px] '>
             <h2 className='text-center text-2xl font-bold mb-10'>{title}</h2>
             <form onSubmit={onSubmit} className='flex flex-col'>
                 {title === "Register" &&
