@@ -20,10 +20,10 @@ function AppRouting() {
             <Route path="/register" element={<RegisterPage />} />
             <Route path="/recipes/:name/:id" element={<RecipesListPage />} />
             <Route path="/recipe/:id" element={<RecipePage />} />
-            <Route path="/profile" element={<ProfilePage />} />
-            {/* <PrivateRoute path="/profile">
-                <ProfilePage />
-            </PrivateRoute> */}
+            {/* <Route path="/profile" element={<ProfilePage />} /> */}
+            <Route element={<PrivateRoute></PrivateRoute>}>
+                <Route path="/profile" element={<ProfilePage />}></Route>
+            </Route>
             <Route path='*' element={<Home />} />
         </Routes>
     );

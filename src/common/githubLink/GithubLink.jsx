@@ -7,7 +7,7 @@ export default function GithubLink() {
             <div><a href="#"  >
                 Visit my GitHub
             </a>
-                <a href='https://github.com/raquelEve' className='mx-2 link link-success' target='blank'>
+                <a href='https://github.com/raquelEve' className='mx-2 link link-success' target='_blank'>
                     https://github.com/raquelEve
                 </a>
             </div>
