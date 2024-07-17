@@ -19,7 +19,7 @@ export default function AboutPage() {
                         </p>
                     </div>
                 </div>
-                <div className='flex justify-between container mx-auto rounded-box bg-white px-8 pb-6 shadow-lg'>
+                <div className='flex justify-between container mx-auto rounded-box bg-white px-8 pb-6 shadow-lg relative z-[10]'>
                     <div className='w-full p-12'>
                         <h2 className="text-xl font-bold text-center mt-6 mb-8">About nyammmmy</h2>
                         <p className='mb-6 text-center'>
@@ -44,7 +44,7 @@ export default function AboutPage() {
                         </p>
                     </div>
                 </div>
-                <div className='relative bg-detail mt-[-80px] z-[-10] pt-[90px] pb-[12px] flex flex-col'>
+                <div className='bg-detail mt-[-80px] pt-[90px] pb-[12px] flex flex-col'>
                     <div className='border-info-extra text-center w-2/3 rounded-box mx-auto my-8 p-10'>
                         <h2 className="text-xl font-bold text-center my-8">Where to Find Me:</h2>
                         <GithubLink></GithubLink>
