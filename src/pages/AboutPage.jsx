@@ -1,4 +1,3 @@
-import React from 'react'
 import HeaderComponent from '../common/HeaderComponent/HeaderComponent'
 import SocialNavbarComp from '../common/socialNavbar/SocialNavbarComp'
 import FooterComp from '../common/FooterComponent/FooterComp'

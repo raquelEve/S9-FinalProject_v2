@@ -1,5 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useContext, useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import HeaderComponent from '../common/HeaderComponent/HeaderComponent';
 import FooterComp from '../common/FooterComponent/FooterComp';
 import { RecipeContext } from '../context/RecipesContext';

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import { useContext, useEffect } from 'react'
 import HeaderComponent from '../common/HeaderComponent/HeaderComponent'
 import FooterComp from '../common/FooterComponent/FooterComp'
 import RecipeDetail from '../components/recipeDetail/RecipeDetail'

@@ -1,4 +1,3 @@
-import React from 'react'
 import HeaderComponent from '../common/HeaderComponent/HeaderComponent'
 import Subscribe from '../common/subscribe/Subscribe'
 import Parallax from '../components/parallaxComp/Parallax'

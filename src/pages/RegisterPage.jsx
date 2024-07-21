@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import SocialNavbarComp from '../common/socialNavbar/SocialNavbarComp';
 import HeaderComponent from '../common/HeaderComponent/HeaderComponent';
 import FooterComp from '../common/FooterComponent/FooterComp';

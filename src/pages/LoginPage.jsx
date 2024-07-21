@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import SocialNavbarComp from '../common/socialNavbar/SocialNavbarComp'
 import HeaderComponent from '../common/HeaderComponent/HeaderComponent'
 import FooterComp from '../common/FooterComponent/FooterComp'
@@ -11,8 +11,6 @@ import { loginUser } from '../features/userSlice';
 
 
 export default function LoginPage() {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
     const [error, setError] = useState(null);
     const dispatch = useDispatch();
     const navigate = useNavigate();
