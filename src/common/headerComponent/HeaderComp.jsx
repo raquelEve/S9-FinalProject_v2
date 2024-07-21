@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './HeaderComp.css';
-import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { CiLogin, CiLogout } from "react-icons/ci";
 import { logoutUser, selectUser } from '../../features/userSlice';
