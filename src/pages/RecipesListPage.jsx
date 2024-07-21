@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import HeaderComp from '../common/HeaderComponent/HeaderComp';
+import HeaderComponent from '../common/HeaderComponent/HeaderComponent';
 import FooterComp from '../common/FooterComponent/FooterComp';
 import { RecipeContext } from '../context/RecipesContext';
 import RecipeListComp from '../components/recipeListComp/RecipeListComp';
@@ -40,7 +40,7 @@ export default function RecipesListPage() {
 
     return (
         <>
-            <HeaderComp />
+            <HeaderComponent />
             <main className='container p-4 md:p-0 mx-auto mb-16'>
                 <h1 className='text-2xl mt-14 mb-12'>
                     <span className='font-bold'>{name}</span>:

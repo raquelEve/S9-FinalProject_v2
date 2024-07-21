@@ -1,8 +1,7 @@
 import React from 'react'
-import HeaderComp from '../common/HeaderComponent/HeaderComp'
+import HeaderComponent from '../common/HeaderComponent/HeaderComponent'
 import Subscribe from '../common/subscribe/Subscribe'
 import Parallax from '../components/parallaxComp/Parallax'
-import Categories from '../components/CategoriesList/CategoriesList'
 import RecipesCarouselList from '../components/RecipesCarouselList/RecipesCarouselList'
 import InspirationComp from '../components/Inspiration/InspirationComp'
 import FooterComp from '../common/FooterComponent/FooterComp'
@@ -15,7 +14,7 @@ export default function Home() {
     return (
         <>
             <SocialNavbarComp></SocialNavbarComp>
-            <HeaderComp></HeaderComp>
+            <HeaderComponent></HeaderComponent>
             <Parallax></Parallax>
             <main className='container mx-auto px-4 md:px-0'>
                 <InspirationComp></InspirationComp>

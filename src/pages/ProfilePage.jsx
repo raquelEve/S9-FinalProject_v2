@@ -4,7 +4,7 @@ import axios from 'axios';
 import { selectUser } from '../features/userSlice';
 import './ProfilePage.css';
 import SocialNavbarComp from '../common/socialNavbar/SocialNavbarComp';
-import HeaderComp from '../common/HeaderComponent/HeaderComp';
+import HeaderComponent from '../common/HeaderComponent/HeaderComponent';
 import FooterComp from '../common/FooterComponent/FooterComp';
 import FavoriteRecipeItem from '../components/FavoriteRecipeItem/FavoriteRecipeItem';
 import { CiHeart } from "react-icons/ci";
@@ -35,7 +35,7 @@ export default function ProfilePage() {
     return (
         <>
             <SocialNavbarComp />
-            <HeaderComp />
+            <HeaderComponent />
             <div className='flex justify-center bg-neutral-500 text-white mt-4 p-1 text-center text-xl font-bold'>
                 Page account
             </div>

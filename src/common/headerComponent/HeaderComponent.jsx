@@ -6,7 +6,7 @@ import { CiLogin, CiLogout } from "react-icons/ci";
 import { logoutUser, selectUser } from '../../features/userSlice';
 import logo from '../../assets/logo.jpg';
 
-export default function HeaderComp() {
+export default function HeaderComponent() {
     const [menuOpen, setMenuOpen] = useState(false);
     const location = useLocation();
     const navigate = useNavigate();

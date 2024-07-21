@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderComp from '../common/HeaderComponent/HeaderComp'
+import HeaderComponent from '../common/HeaderComponent/HeaderComponent'
 import SocialNavbarComp from '../common/socialNavbar/SocialNavbarComp'
 import FooterComp from '../common/FooterComponent/FooterComp'
 import { AiFillGithub } from "react-icons/ai";
@@ -9,7 +9,7 @@ export default function AboutPage() {
     return (
         <>
             <SocialNavbarComp></SocialNavbarComp>
-            <HeaderComp></HeaderComp>
+            <HeaderComponent></HeaderComponent>
             <div className="about-detail">
                 <div className='container mx-auto flex justify-between items-end p-6 pb-0'>
                     <div className='mx-auto md:mx-0'>

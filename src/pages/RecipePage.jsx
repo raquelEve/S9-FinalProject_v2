@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react'
-import HeaderComp from '../common/HeaderComponent/HeaderComp'
+import HeaderComponent from '../common/HeaderComponent/HeaderComponent'
 import FooterComp from '../common/FooterComponent/FooterComp'
 import RecipeDetail from '../components/recipeDetail/RecipeDetail'
 import { useParams } from 'react-router-dom';
@@ -23,7 +23,7 @@ export default function RecipePage() {
 
     return (
         <>
-            <HeaderComp></HeaderComp>
+            <HeaderComponent></HeaderComponent>
             <main className='mx-auto'>
                 <RecipeDetail recipe={recipe}></RecipeDetail>
             </main>

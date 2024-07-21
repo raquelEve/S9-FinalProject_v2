@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import SocialNavbarComp from '../common/socialNavbar/SocialNavbarComp'
-import HeaderComp from '../common/HeaderComponent/HeaderComp'
+import HeaderComponent from '../common/HeaderComponent/HeaderComponent'
 import FooterComp from '../common/FooterComponent/FooterComp'
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebase';
@@ -34,7 +34,7 @@ export default function LoginPage() {
     return (
         <>
             <SocialNavbarComp></SocialNavbarComp>
-            <HeaderComp></HeaderComp>
+            <HeaderComponent></HeaderComponent>
             <main className='container mx-auto flex flex-col'>
                 <FormComponent title="Login" handleSubmit={handleLogin} error={error} />
                 <Link to='/register' className='text-red mb-[200px] text-center hover:text-[#f59d49]'>Do you have account?</Link>

@@ -1,5 +1,5 @@
 
-import HeaderComp from '../common/HeaderComponent/HeaderComp'
+import HeaderComponent from '../common/HeaderComponent/HeaderComponent'
 import FooterComp from '../common/FooterComponent/FooterComp'
 import areasList from '../data/areasList'
 import AreaCard from '../components/AreaCard/AreaCard';
@@ -9,7 +9,7 @@ export default function WorldRecipesPage() {
     return (
         <>
             <SocialNavbarComp></SocialNavbarComp>
-            <HeaderComp></HeaderComp>
+            <HeaderComponent></HeaderComponent>
             <main className='container mx-auto mb-16'>
                 <h1 className='font-playwriteBold text-2xl mt-14 ml-2 mb-12 text-center md:text-left'>
                     Recipes from around the World</h1>
